@@ -31,9 +31,7 @@ mongoose
     .then(() => console.log(`Mongodb Connected`))
     .catch(error => console.log(error));
 
-
 app.use(FrontRouter);
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
